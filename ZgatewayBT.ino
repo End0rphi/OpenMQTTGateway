@@ -197,6 +197,7 @@ Thanks to wolass https://github.com/wolass for suggesting me HM 10 and dinosd ht
       delay(100);
       softserial.print(F("AT+RESET"));
       delay(100);
+      softserial.print(F("AT+PIO11")); // When not connected the LED is off. When connected the LED is solid on.
       trc(F("ZgatewayBT HM1X setup done "));
     }
     
